@@ -27,11 +27,12 @@ requirements:
     - click
     - panel
     - pydantic
+    - pydantic-settings
     - pyyaml
     - typer
     - uri-template
     - httpx
-    - gavicore >=0.0.7
+    - gavicore >=0.0.9
 
 test:
   imports:
@@ -56,5 +57,12 @@ about:
 
 extra:
   recipe-maintainers:
+    - AliceBalfanz
+    - b-yogesh
+    - clarasb
     - forman
+    - konstntokas
     - pont-us
+    - TejasMorbagal
+    - thomasstorm
+    - TonioF
