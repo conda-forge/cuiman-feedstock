@@ -1,5 +1,5 @@
 {% set name = "cuiman" %}
-{% set version = "0.0.8" %}
+{% set version = "0.0.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cuiman-{{ version }}.tar.gz
-  sha256: 7737a5096d7a134b3cf3dc46a919e468dc863bb64c651755b58f638f09113cd1
+  sha256: 1e67f0fde9bb6217db0757a478ab623e8be04f19a77c264d7047e5c01d312be2
 
 build:
   entry_points:
@@ -27,11 +27,12 @@ requirements:
     - click
     - panel
     - pydantic
+    - pydantic-settings
     - pyyaml
     - typer
     - uri-template
     - httpx
-    - gavicore >=0.0.7
+    - gavicore >=0.0.9
 
 test:
   imports:
@@ -56,5 +57,12 @@ about:
 
 extra:
   recipe-maintainers:
+    - AliceBalfanz
+    - b-yogesh
+    - clarasb
     - forman
+    - konstntokas
     - pont-us
+    - TejasMorbagal
+    - thomasstorm
+    - TonioF
