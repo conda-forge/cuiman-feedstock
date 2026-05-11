@@ -32,7 +32,7 @@ requirements:
     - typer
     - uri-template
     - httpx
-    - gavicore >=0.0.9
+    - gavicore >=0.1.0
 
 test:
   imports:
