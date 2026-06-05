@@ -1,5 +1,5 @@
 {% set name = "cuiman" %}
-{% set version = "0.1.0" %}
+{% set version = "0.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cuiman-{{ version }}.tar.gz
-  sha256: daba05169eeec7ba4f3a8ef2037f106712094ac41deeb718a8551e03ee1a8a44
+  sha256: 703db47d1037a4b82c214e147dcac5e2e51a4c241dcb19ecde60b2e0c8588389
 
 build:
   entry_points:
