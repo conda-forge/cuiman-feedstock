@@ -34,7 +34,7 @@ requirements:
     - typer
     - uri-template
     - httpx
-    - gavicore >=0.1.1
+    - gavicore >=0.1.2
 
 test:
   imports:
