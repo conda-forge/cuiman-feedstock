@@ -1,5 +1,6 @@
 {% set name = "cuiman" %}
 {% set version = "0.1.2" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
@@ -53,7 +54,7 @@ about:
   dev_url: https://github.com/eo-tools/eozilla/
   summary: A client for the OGC API - Processes, Part 1.
   description: |
-    Eozilla 🦖 Cuiman is a package tha provides a client Python API, GUI, and CLI 
+    Eozilla 🦖 Cuiman is a package that provides a client Python API, GUI, and CLI 
     for servers compliant with the OGC API - Processes, Part 1.
   license: Apache-2.0
   license_file: LICENSE
