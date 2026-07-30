@@ -1,5 +1,6 @@
 {% set name = "cuiman" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
+{% set python_min = "3.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cuiman-{{ version }}.tar.gz
-  sha256: 703db47d1037a4b82c214e147dcac5e2e51a4c241dcb19ecde60b2e0c8588389
+  sha256: bad3f6e0d8ce98ca047b3808d24e887924ea0c1aa3a1e86a694ddb108998ec39
 
 build:
   entry_points:
@@ -31,10 +32,11 @@ requirements:
     - pydantic
     - pydantic-settings
     - pyyaml
+    - remotestate >=0.3.1,<1
     - typer
     - uri-template
     - httpx
-    - gavicore >=0.1.1
+    - gavicore >=0.1.2
 
 test:
   imports:
@@ -52,7 +54,7 @@ about:
   dev_url: https://github.com/eo-tools/eozilla/
   summary: A client for the OGC API - Processes, Part 1.
   description: |
-    Eozilla 🦖 Cuiman is a package tha provides a client Python API, GUI, and CLI 
+    Eozilla 🦖 Cuiman is a package that provides a client Python API, GUI, and CLI 
     for servers compliant with the OGC API - Processes, Part 1.
   license: Apache-2.0
   license_file: LICENSE
