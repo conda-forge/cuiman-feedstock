@@ -25,6 +25,7 @@ requirements:
     - setuptools
   run:
     - python >={{ python_min }}
+    - ipython
     - pydantic
     - pydantic-settings
     - pyyaml
