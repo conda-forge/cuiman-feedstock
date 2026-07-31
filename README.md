@@ -13,7 +13,7 @@ Development: https://github.com/eo-tools/eozilla/
 
 Documentation: https://eo-tools.github.io/eozilla/
 
-Eozilla 🦖 Cuiman is a package tha provides a client Python API, GUI, and CLI
+Eozilla 🦖 Cuiman is a package that provides a client Python API, GUI, and CLI
 for servers compliant with the OGC API - Processes, Part 1.
 
 
