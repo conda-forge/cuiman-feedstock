@@ -26,14 +26,17 @@ requirements:
   run:
     - python >={{ python_min }}
     - ipython
-    - pydantic
-    - pydantic-settings
+    - pydantic >=2.12
+    - pydantic-settings >=2.14.2
     - pyyaml
     - remotestate >=0.3.4,<1
     - typer >=0.26.0,<1
     - uri-template
-    - httpx
-    - gavicore >=0.2.0
+    - httpx2
+    - authlib >=1.8,<1.9
+    - joserfc >=1.6,<2
+    - keyring
+    - gavicore >=0.3.0
 
 test:
   imports:
