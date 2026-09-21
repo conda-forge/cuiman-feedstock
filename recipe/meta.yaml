@@ -1,5 +1,5 @@
 {% set name = "cuiman" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cuiman-{{ version }}.tar.gz
-  sha256: 7fe40cb214ab7540b2b8718034693330a1192c26d1834b50569530c8c6bcd300
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/cuiman-{{ version }}.tar.gz
+  sha256: 86fee27409272b5f9588afb1c02c952d3a51bd256b8e58eb96dd81fb2e004496
 
 build:
   entry_points:
@@ -26,14 +26,17 @@ requirements:
   run:
     - python >={{ python_min }}
     - ipython
-    - pydantic
-    - pydantic-settings
+    - pydantic >=2.12
+    - pydantic-settings >=2.14.2
     - pyyaml
     - remotestate >=0.3.4,<1
     - typer >=0.26.0,<1
     - uri-template
-    - httpx
-    - gavicore >=0.2.0
+    - httpx2
+    - authlib >=1.8,<1.9
+    - joserfc >=1.6,<2
+    - keyring
+    - gavicore >=0.3.0
 
 test:
   imports:
