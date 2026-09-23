@@ -1,5 +1,5 @@
 {% set name = "cuiman" %}
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 {% set python_min = "3.12" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/cuiman-{{ version }}.tar.gz
-  sha256: 86fee27409272b5f9588afb1c02c952d3a51bd256b8e58eb96dd81fb2e004496
+  sha256: c875edafd10073b036d79b922d42bca02ecf71f1ffd41de4a0dfe7ee32bf2e22
 
 build:
   entry_points:
